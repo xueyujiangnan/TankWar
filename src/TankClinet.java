@@ -14,11 +14,13 @@ public class TankClinet extends Frame {
 	public static final int GAMEHEIGHT= 600;
 	
 	Tank myTank = new Tank(50,50);
+	Missile m = new Missile(50, 50, Tank.Direction.R);
 	Image offScreenImg = null;
 	/**
 	 * 重画时自己的调用
 	 */
 	public void paint(Graphics g) {
+		m.draw(g);
 		myTank.draw(g);
 	}
 	public void update(Graphics g) {

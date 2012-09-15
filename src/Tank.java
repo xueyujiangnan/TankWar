@@ -62,6 +62,9 @@ public class Tank {
 	public void KeyPressed(KeyEvent e){
 		int key = e.getKeyCode();
 		switch (key) {
+		case KeyEvent。VK_CONTROL:
+			Fire();
+			break;
 		case KeyEvent.VK_LEFT:
 			bL = true;
 			break;
@@ -110,5 +113,9 @@ public class Tank {
 			break;
 		}
 		locataeDirection();
+	}
+	public Missile Fire(){
+		Missile m = new Missile(x, y, dir);
+		return M;
 	}
 }
