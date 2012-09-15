@@ -70,6 +70,10 @@ public class TankClinet extends Frame {
 		
 	}
 	private class KeyMoniter extends KeyAdapter{
+		public void keyReleased(KeyEvent e) {
+			myTank.keyReleased(e);
+		}
+
 		public void keyPressed(KeyEvent e) {
 			myTank.KeyPressed(e);
 		}
